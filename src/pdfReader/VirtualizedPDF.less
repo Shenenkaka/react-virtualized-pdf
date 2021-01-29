@@ -1,0 +1,48 @@
+.pdfReader-container {
+    width: 100%;
+    height: 100%;
+    background-color: #eeeeee;
+    overflow: hidden;
+
+    .pdfReader-content {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .pdfReader-scale-button-cot {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        right: 1.5rem;
+        bottom: 1.5rem;
+    }
+
+    .scale-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 2rem;
+        height: 2rem;
+        border: 1px solid #d9d9d9;
+        border-radius: 2rem;
+        box-shadow: 0 2px 0 rgba(0, 0, 0, 0.015);
+        background-color: #fff;
+        color: rgba(0, 0, 0, 0.65);
+
+        &:hover {
+            cursor: pointer;
+            color: #64aad9;
+            border-color: #64aad9;
+        }
+        
+        .scale-button-icon {
+            font-size: 20px;
+
+            &::selection {
+                color: #64aad9;
+                background-color: #fff;
+            }
+        }
+    }
+}
