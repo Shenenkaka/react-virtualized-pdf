@@ -2,10 +2,12 @@ const path = require('path')
 
 module.exports = {
     mode: 'production',
-    entry: './playground/index.js',
+    entry: './src/VirtualizedPDF.js',
     output: {
-        filename: 'main.js',
-        path: path.resolve(path.resolve(), './public/dist')
+        path: path.resolve(__dirname, 'lib'),
+        filename: 'react-virtualized-pdf.min.js',
+        libraryTarget: 'umd',
+        library: 'ReactVirtualizedPDF'
     },
     module: {
         rules: [
@@ -44,6 +46,19 @@ module.exports = {
                 ],
             },
         ]
+    },
+    externals: {
+        react: {
+            root: 'React',
+            commonjs2: 'react',
+            commonjs: 'react',
+            amd: 'react'
+        },
+        'react-dom': {
+            root: 'ReactDOM',
+            commonjs2: 'react-dom',
+            commonjs: 'react-dom',
+            amd: 'react-dom'
+        }
     }
-
 }

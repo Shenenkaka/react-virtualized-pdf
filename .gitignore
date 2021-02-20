@@ -3,9 +3,14 @@
 
 # production
 /build
+/dist
+
+/public/dist
+/lib
 
 # misc
 .DS_Store
 
 yarn-debug.log*
 yarn-error.log*
+npm-debug.log

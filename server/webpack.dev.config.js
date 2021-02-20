@@ -4,7 +4,7 @@ const webpack = require('webpack')
 module.exports = {
     mode: 'development',
     devtool: 'eval-cheap-source-map',
-    entry: ['./src/index.js', 'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000&reload=true'],
+    entry: ['./playground/index.js', 'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000&reload=true'],
     output: {
         filename: 'main.js',
         path: path.resolve(path.resolve(), 'dist')

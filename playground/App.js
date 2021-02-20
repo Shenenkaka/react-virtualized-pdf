@@ -1,5 +1,5 @@
 import React from 'react'
-import VirtualizedPDF from './pdfReader/VirtualizedPDF'
+import VirtualizedPDF from '../src/VirtualizedPDF'
 
 import "./App.less"
 
